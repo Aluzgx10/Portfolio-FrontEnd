@@ -1,0 +1,29 @@
+body p {color: blue;}
+ 
+h1 {
+	color: red;
+}									etiqueta
+
+
+/*
+* {
+  val1: x;
+  cal2: y;
+	
+}
+p span {algo: x; otro: y}			descendente
+
+ .algunaCarac {color: val;}			selector class		(para los elems distiguidos)
+ #alguncarac {...}					selector ID			(solo selecciona un elem en todoa la pag)
+ p > algunaC {}						selector avanzado	(es para los que derivan directamente)
+ 
+ tipos de margenes:
+ - margin-top, bottom			(solo a bloque o imagen)
+ - margin-left, right			(cualquier elem)
+ 
+ relleno:
+ padding-bottom, top			(ej: padding: 1em 2em)	(sup e inf 1em, izq y der 2em)
+ padding-left, right
+ 
+ (font lo usamos en sus variedades en HTML, por el momento)*/
+ 
