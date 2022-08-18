@@ -1,48 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<!-- <html>
-
-<head>
-  <title> My page </title> 
-</head> 
-
-<body>
-
-<div class="container">					<!--ejemplo de caja--
-  <div class="row" >
-    <div class="col"> contenido </div>
-	<div class="col"> contenido 2 </div>
-  </div>
-</div>
- <img src="inicio" class ="rounded float-start" alt="...">			<!-- ejemplo de alinear al inicio--
- <figure class="figure">
- 
-    <img src="..." class="figure-img img-fluid rounded" alt="...">		<!-- insercion de texto en la imagen--
-    <figcaption class="figure-caption">Figura 1.2</figcaption>
-<!-- 
-algo
- //--
-</figure>
-</body>
-<script>
-		var algo = document.createElement("div");			(uso de comandos en script)
-</script>
-</html>-->
-
-<html>
+<html lang="es-AR">
 
 <head>
-	<title> Writing... </title>
+
+	<meta charset="UTF-8">
+	<meta name="author" content="Uriel Guzman">
+	<meta name="description" content="My Personal Web Portfolio">
+	<meta http-equiv="refresh" content="360">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" >
+		<title> Portfolio </title>
+	<link href="Style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="0-U.png" sizes="194x194">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Iso|Sofia|lora|Dancing Script&effect=fire">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<base href="file:///F:/%23Argentina%20Programa/%23YoProgramo/Porfolio/PortfolioFrontEnd/Index.html">
+
 </head>
-<h1> LA pu.. vida </h1>
+
+<header>
+	<h1 class="my-title font-effect-fire" align="center"> My portfolio </h1>
+		<nav class="menu">
+		<ul class="search">
+			<li><a href="#home"> Inicio </a></li>
+			<li><a href="#about"> Sobre Mi </a></li>
+			<li><a href="#list"> Proyectos </a></li>
+			<li><a href="#contact"> Contacto </a></li>
+		</ul>
+		</nav>
+</header>
+
 <body>
 
-<p>
-		cosas que van aqui
-</p>
+<div class="container" id="home">
+	<h2><u>Presentación</u></h2>
+	<p> 
+	Para comenzar, me gustaria presentarme brebemente soy <strong>Uriel</strong> , soy, no, me estoy preparando <br/>
+	para ser un programador, mi objetivo, simple, es ser alguien capas de decir yo hice ago con mi vida, <br/>
+	para ello sigo la idea de <i><q>no dejar para mañana lo que puedo hacer hoy</q></i>.
+	</p>
+	<img src="https://frasesdelavida.com/wp-content/uploads/2019/01/frases-de-robotica.jpg" align="center" 
+	alt="Pequeña motivacion" width="60%" style="border-radius: 5px;"/>
+</div>
+
+<div class="container" id="about">
+	<div id="educacion">
+	 <h2> Educación </h2>
+	  <p> Niveles educativos pasados (pero nunca olvidados): 
+		<ul class="pasos">
+			<li> Primario_	&#128102;:	&#11088;.</li>
+			<li> Secundario_  &#128104;:  &#127775;, titulo: Bachiller Orientado en Ciencias Naturales.</li> 
+			<li> Universidad_  &#128104;: en curso, carrera: Lic. en Ciencias de la Computación &#128187;...</li>
+		</ul>
+		&#128204; Por el momento me preparo para, un dia, sacar lo mejor de mí. &#128640;
+	  </p>
+	</div>
+	<div id="extra_study">
+	 <h2> Preparación adicional </h2>
+	  <p> Cursos relaizados (con o sin esmero, pero hechos):
+		<ul class="pasos">
+		  Lenguajes:
+			<li> C basic.</li>
+			<li> C++ basic..</li>
+			<li> CSS basic.</li>
+			<li> Haskell basic.</li>
+			<li> HTML basic.</li>
+			<li> Ruby basic.</li>
+		  Computación general:
+			<li> Operador Office Avanado (certificado parcialmente).</li>
+			<li> Linux basic (certificado).</li>
+			<li> Introducción a la Ciber Seguridad (certificado).&#128737;</li>
+		  Idiomas:
+			<li> Ingles </li>
+		</ul>
+	  </p>
+	</div>
+	<div id="pasatiempos">
+	 <h2> Pasatiempos </h2>
+	  <p> &#128204; No todo en la vida en trabajo a fin de cuantas, por ello, en tiempos libres:
+		<ul class="pasos">
+			<li> Dibujo / pinto &#128396;</li>
+			<li> Practico Basquetbol &#127936;</li>
+			<li> Programo por diversion (&#128064;)</li>
+		</ul>
+	  </p>
+	</div>	
+</div>
+
+<div class="container" id="list">
+	<h3><u>Proyectos:</u></h3>
+	<article class="proyect">
+		<img src="cap_port.png" alt="Imagen de este proyecto" id="number_1" class="ilustracion">
+		<h4><b>Portfolio:</b></h4>
+		<p>Un proyecto individual, que consistia, en hacer por mi cuenta una página/app en base a lo que iba
+		aprendiendo en el <strong>Argentina Programa</strong>.</p>
+	</article>
+</div>
 
 </body>
-<script src="Index.js"></script>						<!-- scripts al final, por si acaso -->	
-<link href="Style.css" rel="stylesheet">
+
+<div class="container" id="part-x">
+	<br/>
+	<h2 id="myText"> &#128204; </h2>
+	<button onclick="muestraMe()" id="tik"> Recuerda </button>
+	
+</div>
+
+<footer id="contact">
+<table class="container">
+<tbody>
+<br/>
+	<tr>
+		<th>
+		  Autor de página: Uriel Guzman.<br>
+		  Para más información:<br>
+		  <a href="holamundo10@gmail.com">holamundo10@gmail.com</a><br>
+		  Mi casita 123, R4, Cba, ARG
+		</th>
+		<th> 		  
+		  Páginas recomendable:<br>
+		  <a href="https://www.w3schools.com/"> W3School (buenos ejemplos)</a><br>
+		  <a href="https://lenguajejs.com/"> LenguajesJs (buenos consejos)</a><br>
+		  <a href="https://htmlcheatsheet.com/"> HtmlCheatSheet (de todo un poco)</a><br>
+		</th>
+		<th> 
+		  Adiciones:
+		  Ninguna por el momento.
+		</th>
+	</tr>
+</tbody>
+</table>
+
+</footer>
+
+	<script src="Index.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 </html>

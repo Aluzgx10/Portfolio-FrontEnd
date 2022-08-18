@@ -1,29 +1,140 @@
-body p {color: blue;}
- 
-h1 {
-	color: red;
-}									etiqueta
-
-
-/*
-* {
-  val1: x;
-  cal2: y;
-	
+body {
+	background-image: url('https://i.pinimg.com/originals/d7/d1/ff/d7d1ff032c5bd6d44a4f89388449c243.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
-p span {algo: x; otro: y}			descendente
 
- .algunaCarac {color: val;}			selector class		(para los elems distiguidos)
- #alguncarac {...}					selector ID			(solo selecciona un elem en todoa la pag)
- p > algunaC {}						selector avanzado	(es para los que derivan directamente)
- 
- tipos de margenes:
- - margin-top, bottom			(solo a bloque o imagen)
- - margin-left, right			(cualquier elem)
- 
- relleno:
- padding-bottom, top			(ej: padding: 1em 2em)	(sup e inf 1em, izq y der 2em)
- padding-left, right
- 
- (font lo usamos en sus variedades en HTML, por el momento)*/
- 
+h1.my-title {
+	color: orange;
+	font-family: "Dancing Script", Sofia, serif;
+	margin-top: 15px;
+}
+
+#myText {
+	font-family: Sofia;
+	text-shadow: 0 0 0.1em #fff, 0 0 0.2em #70e9d8, 0 0 0.3em #5ce5f3, 0 0 0.4em #36ccdc,0 0 0.6em #00cfff, 0 0 0.8em #00cfff, 0 0 1.0em #00abff, 0 0 1.2em #0093ff;
+}
+
+#myText, button {
+	color: white;
+	background-color: transparent;
+}
+button {text-shadow: 0 0 1.0em #00abff, 0 0 1.2em #0093ff;}
+
+#part-x {text-align: center;}
+
+#home {
+	border: 5px ridge lightgrey;
+	border-radius: 20px;
+	text-align: center;
+	padding: 15px 30px;
+	margin-bottom: 10px;
+	color: white;
+	font-family: lora, serif;
+	font-size: 120%;
+}
+
+#contact {
+	padding-bottom: 15px;
+}
+
+table {
+	text-align: left;
+	color: white;
+	font-family: serif;
+	font-size: 110%;
+}
+
+th a {	
+	text-decoration: none;
+	color: lightblue;
+}
+
+#about {
+	border: 5px ridge silver;
+	border-radius: 10px;
+	padding: 20px 30px;
+	margin-bottom: 10px;
+	color: white;
+	font-family: serif, lora;
+	font-size: 120%;
+}
+
+.pasos {
+	list-style-type: disc;
+	text-shadow: 0 0 0.6em #19a0f0, 0 0 0.8em #0677db, 0 0 1.0em #066ec9, 0 0 1.2em #065be1;
+}
+
+.pasos > li {float: none;}
+
+#list {
+	border: 5px outset silver;
+	border-radius: 3px;
+	padding: 5px;
+	margin: auto;
+	background-color: rgb(50,50,50,50%);
+	color: white;
+	font-family: serif;
+	font-size: 120%;
+}
+
+#list > h3, .proyect{
+	margin: 10px;
+	padding: 5px;
+}
+
+.proyect {background-color: rgb(200,200,200,20%);}
+
+.ilustracion {
+	 float: right;
+	 width: 150px;
+	 height: 100px;
+	 display: inline;
+}
+
+.ilustracion:hover {
+	 width: 366px;
+	 height: 244px;
+}
+
+#in_nombre, #in_descrip, #in_foto, #save {
+	display: none;
+	background: transparent;
+	color: white;
+	margin-bottom: 5px;
+}
+
+ul.search {
+  list-style-type: none;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #70e9d8, 0 0 0.3em #5ce5f3, 0 0 0.4em #36ccdc,0 0 0.6em #00cfff, 0 0 0.8em #00cfff, 0 0 1.0em #00abff, 0 0 1.2em #0093ff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+ }
+
+li {
+  float: left;
+}
+
+li a:hover {
+  background-color: teal;
+  color: white;
+  border-radius:10px;
+  text-shadow:2px 2px 1px black, 3px 3px 1px black, 4px 4px 2px black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+ }
+
+.menu {
+	margin: 1cm 0.5em 1em 0.5em;
+	font-family: lora;
+	font-size: 130%;
+}
